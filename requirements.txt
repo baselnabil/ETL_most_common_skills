@@ -1,5 +1,6 @@
 jupyter 
 pandas
-jobspy
+python-jobspy
 spacy
 skillNer
+beautifulsoup4
