@@ -1,265 +1,402 @@
 Skill,Count
-data engineering,44
-infrastructure,38
-data quality,28
-data engineer,26
-analytics,25
-python,19
-data science,18
-sql,17
-data infrastructure,14
+data engineering,88
+data engineer,84
+python,57
+analytics,56
+infrastructure,55
+data quality,50
+sql,47
+data science,40
+management,33
+databricks,32
+data modeling,30
+snowflake,27
+data governance,26
+data infrastructure,26
+java,20
+data models,20
+data,19
+troubleshooting,18
+pyspark,18
+scala,17
+big data,16
+data mart,16
+data architecture,16
+planning,16
+electrical engineer,16
+design information,16
+data sources,16
+research,15
+transparency,15
+finance,15
+software engineer,14
+product managers,14
+data architectures,14
+data warehousing,14
 data visualization,14
-data,12
-data governance,12
-data architecture,12
-transparency,12
-data modeling,12
+collaboration,14
+design build,14
+innovation,14
+programming,14
+redshift,13
+scale,13
+construction,13
+algorithms,12
+sales,12
 predictive models,12
-management,11
-research,11
-data models,10
-databricks,10
-snowflake,10
-scala,9
-innovation,9
-product managers,8
-data architectures,8
+data wrangling,12
+banking,11
+scalability,11
+nosql,11
+leadership,11
+operations,11
+r,11
+tableau,11
+informatica,11
+workflows,11
+software code,10
+integration,10
+automation,10
+data structures,10
+designing building,10
+reliability,10
+writing,10
+design configure,10
+athena,9
+track,9
+consulting,9
+diagrams,8
+scientists healthcare,8
 data security,8
 data migration,8
-data mart,8
-scientists healthcare,8
-processes data,8
-leadership,8
-design build,8
-electrical engineer,8
-design information,8
-collaboration,8
-data transformation,8
-reliability,7
-finance,7
-tableau,7
-scale,6
+services provided,8
+floor plan,8
+revit,8
+present design,8
+transportation energy,8
+environment markets,8
+kinesis aws,8
+cloud services,8
+data engineers,8
+airflow,8
+engineering projects,8
+jenkins,7
+debugging,7
+teamwork,7
+autocad,7
+nice,7
+governance,7
+unix,7
+japanese,7
+childcare,6
 hipaa,6
-scalability,6
-data warehousing,6
-nosql,6
-integration,6
 surgery,6
-planning,6
-operations,6
-construction,6
-algorithms,6
-cloud services,6
+read,6
+disabilities,6
+investigation,6
+data modelling data,6
 monitoring continuously monitor,6
-data engineers,6
-data sources,6
-data structures,6
-designing building,6
-data center,6
-teamwork,5
-read,5
-c,5
-informatica,5
-automation,5
+devops,6
+collaboratively designed,6
+biotechnology,6
+data sciences,6
+preventative maintenance,6
+data analysis,6
+splunk,6
+source,6
+javascript,6
+transform data,6
+controls engineer,6
+develop test,6
+added,6
+hygiene,5
+sustainability,5
+authorization,5
+microstrategy,5
+jira,5
+cancer,5
+git,5
+reconciliation,5
+treasury,5
+backend,5
+visualization,5
+linux,5
+lasso,5
+opensearch,4
+spinnaker,4
 managers designers,4
-systems implement,4
 cassandra,4
 integrate data,4
-securing data,4
-troubleshooting,4
-authorization,4
-investigation,4
 database engineer,4
-diagrams,4
+metadata,4
+processes data,4
 personalized medicine,4
 geriatrics,4
-excellent business,4
-building tools,4
-data integrity,4
-data sourcing,4
+securing data,4
+c,4
 continuously integrate,4
-policies develop,4
 inform model,4
-consulting,4
-services provided,4
-designs interact,4
-floor plan,4
-revit,4
-present design,4
-transportation energy,4
-environment markets,4
-kinesis aws,4
+telecommunications,4
+colocation,4
+voltage,4
+drawing,4
+calculations,4
+skm,4
+etap,4
+pe,4
+energy,4
+organize standardize,4
+marketplace,4
+web services,4
+develop applications,4
+software engineers,4
+data normalization,4
+analytics business,4
+banking commercial,4
+investment bank,4
 performance monitoring,4
 engineers cloud,4
-data model,4
-data wrangling,4
+tooling,4
+iics,4
 building automation,4
-systems develop,4
-center operations,4
-program generous,4
+data center,4
 economy,4
-java,4
-innovative products,4
-transform data,4
+data model,4
+experience designing,4
+data transformation,4
+managing data,4
+azure monitoring,4
+share data,4
+manage data,4
+github,4
+engineer data,4
+cyber engineer,4
+data testing,4
+optimize queries,4
+childbirth,4
+hvac,4
+plumbing,4
+recommend systems,4
+scheduled events,4
+health sciences,4
+timelines,4
+business journal,4
+prepare tax,4
+data domains,4
+practice guiding,4
+organization standards,4
+streaming data,4
+data stream,4
+securities,4
+process due,4
+workforce planning,4
 operating businesses,4
 testing integration,4
 mathematics physics,4
-track,3
-sustainability,3
-metadata,3
-creativity,3
-r,3
-marketplace,3
+rest api,4
+engineering software,4
+shell scripting,4
+data transformations,4
+science business,4
+aggregation functions,4
+object management,4
+sales engineer,4
+contract manufacturing,4
+tuning sql,4
+manage technical,4
+warehousing,3
+nursing,3
+forth,3
+matplotlib,3
 transformation,3
-data modelling data,3
-devops,3
-governance,3
-pyspark,3
-github,3
-programming,3
-scripting,3
-git,3
-added,3
-vulnerability,2
-forth,2
-lina,2
-disabilities,2
-b,2
+kinesis,3
+graphql,3
+flink,3
+hosting,3
+forecasting,3
+tensorflow,3
+statistics,3
+prototyping,3
+confluence,3
+elasticsearch,3
+aurora,3
+antibodies,3
+refining,3
+templates,3
+microservices,3
+docker,3
+supervision,3
+plc,3
+calibration,3
+firewall,3
+virtualization,3
+los,3
+accounting,3
+bilingual,3
+curiosity,3
+hive,3
 dm,2
-warehousing,2
 parsing,2
-nursing,2
 informatics,2
 orthopedics,2
 rehabilitation,2
 urology,2
 ear,2
 ophthalmology,2
-flume,2
-dataflow,2
-target,2
+vulnerability,2
+lina,2
+b,2
 agility,2
 economics,2
-microstrategy,2
 requisition,2
-telecommunications,2
-colocation,2
-voltage,2
-drawing,2
-calculations,2
-autocad,2
-skm,2
-etap,2
-pe,2
-energy,2
-organize standardize,2
-web services,2
-develop applications,2
-software engineers,2
-data normalization,2
-analytics business,2
-athena,2
-redshift,2
+wordpress,2
+backends,2
+catalogues,2
+dynamodb,2
+deploying applications,2
+aws glue,2
+markets commodities,2
+corporations governments,2
+manage risk,2
 improved quality,2
-sales,2
 continuously monitoring,2
 data exploration,2
-hosting,2
 validate models,2
 modeling process,2
-big data,2
-forecasting,2
-tensorflow,2
-tooling,2
-collaboratively designed,2
-biotechnology,2
-data sciences,2
-preventative maintenance,2
-structures writing,2
+excellent business,2
+building tools,2
+creativity,2
+data integrity,2
+data sourcing,2
+blueprints,2
+center operations,2
 unit tests,2
-data pipelines,2
-airflow,2
-tools manage,2
 engineers data,2
 data processes,2
-products improve,2
-experience designing,2
-writing,2
+mulesoft,2
+technical manager,2
+data ingestion,2
+onboarding,2
+restful apis,2
+traceability,2
+repair computer,2
+engineer,2
+smooth data,2
+design manage,2
+personal development,2
+transformative business,2
+project plan,2
+genetics,2
 training military,2
 design software,2
-microservices,2
-jenkins,2
-modeling languages,2
-behavior models,2
-enhance speech,2
-develop software,2
-quality products,2
-shared objectives,2
-mysql,2
-datasets train,2
+telehealth,2
+software developer,2
+react,2
+tooling platforms,2
+containerization,2
+outsourcing,2
+data process,2
+communications,2
 design test,2
 data preprocessing,2
-backend,2
 methods designing,2
-environment applicants,2
-workflows,2
-design optimize,2
-workflows automate,2
-data exchange,2
-json,2
-parquet,2
-source,2
-data domains,2
-practice guiding,2
-organization standards,2
-streaming data,2
-curiosity,2
-securities,2
-process due,2
-workforce planning,2
-planning job,2
-managing data,2
-azure monitoring,2
+models provide,2
+components connect,2
+powerapps,2
+improve production,2
+installation,2
+think creatively,2
+applications plan,2
+revisions,2
+secure databases,2
+management develop,2
+linux oracle,2
+data file,2
+strategic plan,2
+reviews develop,2
+mentorship,2
+process engineer,2
+improve processes,2
+develop customized,2
+tracking,2
+capabilities develop,2
+securing applications,2
+collaboration communication,2
+skills analytical,2
+light industrial,2
+freight forwarding,2
+logistics,2
+curation,2
+catalyst,2
+imagination,2
+perspective,2
 blockchain,2
 loosely coupled,2
 data pipelining,2
 unit testing,2
-reporting tools,2
+terraform,2
 physics engineering,2
 applicable state,2
-data processing,2
+processing analysis,2
 decision making,2
+marketed products,2
+develop plans,2
+controls process,2
+design process,2
+payroll taxes,2
+data applications,2
+architecture solutions,2
+mapping,2
+specific requirements,2
+functions product,2
+automated workflows,2
+data marts,2
+functions window,2
+modeling processes,2
+gathering information,2
+project planning,2
+testing code,2
+engineers product,2
+implement systems,2
+innovative products,2
+modern software,2
+procurement,2
+engineering pharmaceutical,2
+contract manufacturer,2
+communicate technical,2
+project manage,2
+report performance,2
+project deployment,2
 retirement plans,2
-firewall,2
-wordpress,1
-backends,1
-catalogues,1
-dynamodb,1
-kinesis,1
+leadership team,2
+team manage,2
+escalating managing,2
+managing global,2
+migrate data,2
+bash,2
+perl,2
+databrick,1
+syntax,1
+toolchain,1
 outliers,1
 parameter,1
 pytorch,1
-matplotlib,1
 seaborn,1
-prototyping,1
-jira,1
-confluence,1
-iics,1
-elasticsearch,1
-aurora,1
-nice,1
-antibodies,1
-cancer,1
+flume,1
+dataflow,1
+target,1
 comprehend,1
-blueprints,1
-systems,1
-program,1
 processing,1
-waves,1
 entrepreneurship,1
-refining,1
 usability,1
-graphql,1
+asana,1
+codebase,1
+webdev,1
+qlikview,1
+servicenow,1
+scheme,1
+commercialization,1
+recall,1
 gradle,1
 maven,1
 msbuild,1
@@ -267,32 +404,83 @@ sonarqube,1
 artifactory,1
 ansible,1
 indemnity,1
-products,1
-communications,1
+queries,1
+empathy,1
+redis,1
+profiling,1
 healing,1
-javascript,1
-linux,1
-unix,1
 persistence,1
-maintainability,1
-curation,1
-timelines,1
-imagination,1
-perspective,1
-mulesoft,1
+renovation,1
+ventilation,1
+systems,1
+deficiencies,1
+safe,1
+m,1
+dashboard,1
+refinement,1
+library,1
+scheduling,1
+tuxedo,1
+cobol,1
+sparc,1
+consolidation,1
+dr,1
+design,1
+uptime,1
+telecommuting,1
+ad,1
+edos,1
+investments,1
+beverages,1
+switch,1
+alteryx,1
+qualtrics,1
+apex,1
+dispatching,1
+prioritization,1
+multitasking,1
+blogs,1
+painting,1
+readings,1
+arithmetic,1
 bitcoin,1
 kubernetes,1
-terraform,1
-docker,1
-childbirth,1
 ordinances,1
 ethereum,1
-mentorship,1
-visualization,1
 postgresql,1
+mysql,1
 bigquery,1
-flink,1
+ideation,1
+nodes,1
+purchasing,1
+teamcity,1
+angular,1
+milestones,1
+pipelining,1
+cron,1
+vaccination,1
+figma,1
+plaid,1
+trajectory,1
+enthusiasm,1
+reengineering,1
+django,1
+flask,1
+bios,1
+chemistry,1
+english,1
+gmp,1
+solidworks,1
+photography,1
+videography,1
 citrix,1
-virtualization,1
 vm,1
 subnetting,1
+android,1
+accountability,1
+toolkits,1
+pyspark pyspark,1
+scripting,1
+pandas,1
+numpy,1
+talend,1

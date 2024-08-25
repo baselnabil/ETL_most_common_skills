@@ -15,7 +15,7 @@ import math
 
  
 #### CONSTANTS
-RESULTS_WANTED = 10
+RESULTS_WANTED = 40
 HOURS_OLD = 168
 SPACY_MODEL = "en_core_web_lg"
 OUTPUT_FILE = '../../data/raw/data3.csv'
