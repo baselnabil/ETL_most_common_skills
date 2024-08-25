@@ -1,88 +1,88 @@
+import os
+filename = os.path.basename(__file__)
+yellow_text = "\033[93m"
+print(f"{yellow_text}Intializing {filename}...")
 
 import re
 import csv
 from jobspy import scrape_jobs
 import spacy
-from spacy import displacy
-from spacy.lang.en.stop_words import STOP_WORDS
 from spacy.matcher import PhraseMatcher
-
 from skillNer.general_params import SKILL_DB
-# import skill extractor
 from skillNer.skill_extractor_class import SkillExtractor
-
 from collections import Counter
 import math
 
+ 
+#### CONSTANTS
+RESULTS_WANTED = 10
+HOURS_OLD = 168
+SPACY_MODEL = "en_core_web_lg"
+OUTPUT_FILE = '../../data/raw/data3.csv'
 
 
-
+print(f"{yellow_text}{filename}: Fetching jobs...")
 
 jobs = scrape_jobs(
     site_name=["indeed", "linkedin", "zip_recruiter", "glassdoor"],
     search_term="Data engineer",
     location="New York, NY",
-    results_wanted=10,
-    hours_old=168, # (only Linkedin/Indeed is hour specific, others round up to days old)
+    results_wanted=RESULTS_WANTED,
+    hours_old=HOURS_OLD, # (only Linkedin/Indeed is hour specific, others round up to days old)
     country_indeed='USA',  # only needed for indeed / glassdoor
     
-    # linkedin_fetch_description=True # get full description , direct job url , company industry and job level (seniority level) for linkedin (slower)
-    # proxies=["208.195.175.46:65095", "208.195.175.45:65095", "localhost"],
     
 )
-print(f"Found {len(jobs)} jobs")
-
-
-
-
-print(jobs.loc[1].description)
-
-
-
-
-nlpp = spacy.load("en_core_web_lg")
-skill_extractor = SkillExtractor(nlpp, SKILL_DB, PhraseMatcher)
-skill_counter = Counter()
 
 descriptions = jobs['description'].dropna().tolist()
 
-for doc in nlpp.pipe(descriptions, batch_size=30): 
-    try:
-        if not doc.text.strip():
-            continue
-        sanitized_text = re.sub(r'[^a-zA-Z\s]', '', doc.text)
-        annotations = skill_extractor.annotate(sanitized_text)
-        
-        for item in annotations['results']['ngram_scored']:
-            skill = item['doc_node_value'].lower()
-            score = item['score']
-            toAddScore = math.floor(score)
-            if toAddScore == 0:
-              continue
-            skill_counter[skill] += toAddScore
-    except IndexError as e:
-        print(f"Error processing description: {doc.text[:50]}...") 
-        continue
-    except ValueError as ee:
-        print(f"Error processing description: {doc.text[:50]}...") 
-        continue
-skill_counter
+print(f"{yellow_text}{filename}: Found {len(jobs)} jobs, of which {len(descriptions)} had valid descriptions.")
 
+print(f"{yellow_text}{filename}: Loading spacy model ({SPACY_MODEL}) and skill extractor...")
+
+nlpp = spacy.load(SPACY_MODEL)
+skill_extractor = SkillExtractor(nlpp, SKILL_DB, PhraseMatcher)
+skill_counter = Counter()
+
+
+print(f"{yellow_text}{filename}: Processing job descriptions...")
+
+for description in descriptions:
+    lines = [line for line in description.splitlines() if line.strip()]
+    
+    for line in lines:
+        try:
+            doc = nlpp(line) 
+            sanitized_text = re.sub(r'[^a-zA-Z\s]', '', doc.text)
+            annotations = skill_extractor.annotate(sanitized_text)
+            
+            for item in annotations['results']['ngram_scored']:
+                skill = item['doc_node_value'].lower()
+                score = item['score']
+                toAddScore = math.floor(score)
+                if toAddScore == 0:
+                    continue
+                skill_counter[skill] += toAddScore
+        except IndexError as e:
+            print(f"Error processing line: {line[:50]}...") 
+            continue
+        except ValueError as ee:
+            print(f"Error processing line: {line[:50]}...") 
+            continue
 
 
 
 most_common_skills = skill_counter.most_common()
 
-output_file = '../../data/raw/data3.csv'
 
-with open(output_file, mode='w', newline='') as file:
+with open(OUTPUT_FILE, mode='w', newline='') as file:
     writer = csv.writer(file)
     
     writer.writerow(['Skill', 'Count'])
     
     writer.writerows(most_common_skills)
 
-print(f"Most common skills have been written to {output_file}")
+print(f"Most common skills have been written to {OUTPUT_FILE}")
 
 
 
